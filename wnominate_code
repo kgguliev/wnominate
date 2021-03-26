@@ -1,0 +1,14 @@
+library(wnominate)
+
+rc_ideol <- rollcall(ideology_dat, yea = c(5,6,7), nay = c(1,2,3,4), missing = 88,
+                notInLegis = 0, desc = "Ideological polarization")
+
+ideology_result <- wnominate(rc_ideol, polarity = c(1,7))
+
+Preparing to run W-NOMINATE...
+
+	Checking data...
+
+	Data contains the following values:  6 9 
+Error in wnominate(rc_ideol, polarity = c(1, 7)) :
+  Data contains values other than 1 or 6 or 9.
