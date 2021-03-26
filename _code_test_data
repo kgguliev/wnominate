@@ -1,0 +1,7 @@
+library(wnominate)
+
+test <- read.csv("gultest2.csv", header = T)
+
+rc_t <- rollcall(test, yea = 1, nay = 6, missing = 9, notInLegis = 0) 
+
+res_t <- wnominate(rc_t, minvotes = 10, polarity = c(2,2))
