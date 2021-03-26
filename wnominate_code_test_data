@@ -1,6 +1,6 @@
 library(wnominate)
 
-test <- read.csv("gultest2.csv", header = T)
+test <- read.csv("test_data.csv", header = T)
 
 rc_t <- rollcall(test, yea = 1, nay = 6, missing = 9, notInLegis = 0) 
 
